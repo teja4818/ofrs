@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif; 
+    text-decoration: none;
+    list-style: none;
+}
+
+/* body{
+    background-color:black ;
+} */
+.border
+{
+    height: 100%;
+    width: 100%;
+    background-color:cornflowerblue;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('landpage-images/brick.jpg'); */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    
+}
+.form
+{
+    width:400px;
+    height: 460px;
+    top:50px;
+    /* left:50%; */
+    background-color:whitesmoke;
+    position: relative;
+    margin:6% auto;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+h1{
+    position: absolute;
+    text-align: center;
+    top:50px;
+    left:110px;
+    padding: 8px 55px;
+    border-radius: 10px;
+    /* background-color:gold; */
+    color: black;
+    font-size: 25px;
+}
+input{
+    font-size: 16px;
+}
+/* h1:hover{
+    background-color:;
+    transition: 0.8s ease-in-out;
+} */
+.login-form
+{
+    position:absolute;
+    top:140px;
+    width: 280px;
+    transition: .5s;
+
+}
+.btn
+{
+    color: black;
+    width: 100%;
+    padding: 14px 0;
+    border: 0;
+    outline: none;
+    margin-left: 60px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+span{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+ input ::placeholder{
+    color: red;
+
+}
+.s-btn
+{
+    display: block;
+    width: 100%;
+    padding: 10px 25px;
+    position: relative;
+    background-color:crimson;
+    color: aliceblue;
+    font-size: 16px;
+    margin: 30px;
+    border: 0;
+    left:36px;
+    outline: none;
+    border-radius: 20px;
+
+}
+.s-btn:hover{
+    background-color:orangered;
+    transition: 0.8s ease-in-out;
+    color: black;
+}
+.register p
+{
+    position: absolute;
+    top:420px;
+    left: 10px;
+    bottom:0px;
+}
+.register span{
+    color: red;
+    font-size: 18px;
+
+}
+.register .fp
+{
+    font-size: 15px;
+    position: relative;
+    left:230px;
+    top:419px;
+}
+.fp a{
+    color: red;
+}
+
+.back  span{
+    position: relative;
+    left:10px;
+    font-size: 14px;
+    color: black;
+    border-bottom: 1px solid black; 
+}
