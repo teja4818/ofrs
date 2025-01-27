@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css-files/reporttable.css">
+</head>
+<body>
+            <form method="post" action="staffreport1.php" class="tablebody">
+                <table class="table-bordered">
+                  <tbody>
+                    <tr>
+                      <th>Name</th>
+                      <td><input type="text" name="stafffullname" class="form-control" required></td>
+                    </tr>
+                    <tr>
+                      <th>Mobile Number</th>
+                      <td><input type="text" name="staffmobilenumber" class="form-control" required></td>
+                    </tr>
+                    <tr>
+                      <th>Email-id</th>
+                      <td><textarea class="form-control" required name="staffemailid"></textarea></td>
+                    </tr>
+                    <tr>
+                      <th>Location</th>
+                      <td><textarea class="form-control" required name="stafflocation"></textarea></td>
+                    </tr>
+              
+                        <tr>
+                            <th>Message</th>
+                            <td><textarea class="form-control" required name="staffmessage"></textarea></td>
+                        </tr>
+                        <tr>
+                          <th>Staff-name(Your's registered name)</th>
+                          <td><textarea class="form-control"  name="staffusername"></textarea></td>
+                      </tr>
+              
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" name="submit" value="Report"  class="btn btn-primary"></td>
+                        </tr>
+              
+                </tbody>
+                </table>
+                </form>
+        
+</body>
+</html>

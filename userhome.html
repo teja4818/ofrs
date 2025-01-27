@@ -1,0 +1,132 @@
+<!-- <?php
+if(!isset($_SESSION['name2']))
+{
+    header('location:userhome.php');
+}
+
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            color:black
+        }
+        /* body{
+            
+            background-image: url('opening-page/11623.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        } */
+        /* ul
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            position: relative;
+            top: 20px;
+           
+        }
+         ul li{
+          display: flex;
+          flex-direction: row;
+          justify-content:space-around;
+        }
+        li a{
+            color: white;
+            padding: 12px 15px;
+            background-color:black;
+            border-radius: 10px;
+        } */
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background:black;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  list-style-type: none;
+}
+ul li {
+  padding: 6px 0;
+}
+ul li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-family: "Lato";
+  font-size: 2rem;;
+  color: #ecf0f1;
+  /* color: black; */
+  text-transform: uppercase;
+  padding: 4px 0;
+  transition: 0.5s;
+}
+ul li a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+ul li a:hover {
+  color: #95a5a6;
+}
+ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+    </style>
+</head>
+<body>
+  <!-- <?php
+  session_start();
+  $con1=mysqli_connect("localhost","root","","ofrs") or die("cannot connect");
+  $r=$_SESSION['name1'];
+  $res=mysqli_query($con,$r) or die ("cannot execute query");
+
+    echo "<h1>HI!<span>'".$r."'</span></h1>"
+
+
+?> -->
+    <nav>
+        <!-- <h1>HI!</h1><span><?php  echo $_SESSION['name2']; ?></span></h1> -->
+        <div class="options"><ul>
+            <li><a href="user-report.php">Report</a></li>
+            <li><a href="userperform.php">Track Performance</a></li>
+            <li><a href="change-password.php">Account Settings</a></li>
+            <li><a href="userpreviouscase.php">Previous Cases</a></li>
+            <li><a href="index.html">Log Out.</a></li>
+        </ul></div>
+    </nav>
+</body>
+</html>
